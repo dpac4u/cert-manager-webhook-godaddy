@@ -6,7 +6,6 @@ replicaCount: 1
 
 image:
   repository: dpac4u/ticktip:godaddy
-  tag: v0.1.1
   pullPolicy: IfNotPresent
 
 groupName: acme.ticktip.com
