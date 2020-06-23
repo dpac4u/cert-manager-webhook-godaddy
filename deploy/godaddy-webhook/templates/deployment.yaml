@@ -19,7 +19,7 @@ spec:
       serviceAccountName: {{ include "godaddy-webhook.fullname" . }}
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        {{- toYaml . | nindent 8 }}
+        - name: dockersecret1
     {{- end }}
       containers:
         - name: {{ .Chart.Name }}
