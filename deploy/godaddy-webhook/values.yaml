@@ -15,8 +15,9 @@ certManager:
   namespace: cert-manager
   serviceAccountName: cert-manager
 
-imagePullSecrets:
+imagePullSecrets: 
   - name: dockersecret1
+  
 nameOverride: ""
 fullnameOverride: ""
 
