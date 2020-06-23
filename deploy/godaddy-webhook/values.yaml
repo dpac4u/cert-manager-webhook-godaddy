@@ -5,7 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: dpac4u/ticktip:godaddy
+  repository: dpac4u/ticktip
+  tag: godaddy
   pullPolicy: IfNotPresent
 
 groupName: acme.ticktip.com
