@@ -5,17 +5,18 @@
 replicaCount: 1
 
 image:
-  repository: inspectorio/cert-manager-webhook-godaddy
+  repository: dpac4u/ticktip:godaddy
   tag: v0.1.1
   pullPolicy: IfNotPresent
 
-groupName: acme.mycompany.com
+groupName: acme.ticktip.com
 
 certManager:
   namespace: cert-manager
   serviceAccountName: cert-manager
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: dockersecret1
 nameOverride: ""
 fullnameOverride: ""
 

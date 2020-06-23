@@ -1,4 +1,4 @@
-module github.com/inspectorioinc/cert-manager-webhook-godaddy
+module github.com/dpac4u/cert-manager-webhook-godaddy
 
 go 1.13
 
